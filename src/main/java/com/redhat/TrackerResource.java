@@ -18,13 +18,10 @@ import org.jboss.resteasy.annotations.jaxrs.PathParam;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import io.quarkus.security.Authenticated;
-
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCursor;
 
 @Path("/reports")
-@Authenticated
 public class TrackerResource {
 
 	@Inject
